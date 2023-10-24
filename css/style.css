@@ -148,7 +148,7 @@ h1 {
 	position: absolute;
 	width: 320px;
 	height: 56px;
-	
+
 	font-size: 18px;
 }
 
@@ -158,7 +158,7 @@ h1 {
 	left: 0;
 	background-color: #ffe6c8;
 	border-top-left-radius: 20px;
-    font-weight: 600;
+	font-weight: 600;
 }
 .card-right {
 	position: absolute;
@@ -166,7 +166,7 @@ h1 {
 	right: 0;
 	background-color: #fff0dd;
 	border-top-right-radius: 20px;
-    font-weight: 500;
+	font-weight: 500;
 }
 .in-wrap {
 	display: flex;
@@ -175,6 +175,7 @@ h1 {
 
 	padding: 30px 54px;
 	flex-direction: column;
+	z-index: -2;
 }
 
 .in-wrap div {
@@ -271,5 +272,43 @@ h1 {
 }
 .button-wraper {
 	position: relative;
-	height: 56px;
+	height: 50px;
+	width: 250px;
+	background-color: #fff;
+	border-radius: 10px;
+    border: solid 1px tomato;
+}
+.hero-mask {
+	width: 50px;
+	height: 50px;
+	background-color: tomato;
+	border-radius: 10px;
+	transition: width 0.5s;
+}
+.arrow-right {
+	position: absolute;
+	top: 13px;
+	left: 13px;
+}
+.animated-button {
+	position: absolute;
+	width: 194px;
+	height: 50px;
+	top: 0;
+	right: 0;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 16px;
+	font-weight: 600;
+    color: tomato;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.button-wraper:hover > a > .hero-mask {
+	width: 250px;
+}
+
+.button-wraper:hover:nth-child(1) .animated-button {
+	color: #fff;
 }
